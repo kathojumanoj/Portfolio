@@ -156,6 +156,33 @@ User-Friendly Interface: An intuitive interface that allows voters to easily cas
             
         </p>
     </div>
-    
+    <h1 id="para"></h1>
+<div class="d1">
+     <span id="s1">Prepare presentation</span>
+     <button class="downButton" onclick="down(1)" type="button">&darr;</button>
+ </div>
+ <div class="d2">
+     <span id="s2">Read emails</span>
+     <button class="downButton" onclick="down(2)" type="button">&darr;</button>
+     <button class="upButton" onclick="up()" type="button">&uarr;</button>
+ </div>
+ <div class="d3">
+     <span id="s3">Monthly report</span>
+     <button class="upButton" onclick="up(3)" type="button">&uarr;</button>
+ </div>
+<h1>Hellow world..</h1>
+
+<script>
+
+  function down(idx)
+  {
+  	
+ 	var s1=document.getElementById('s1').textContent+idx; 
+	var s2=document.getElementById('s2').textContent; 
+	var s3=document.getElementById('s3').textContent; 
+
+  	document.getElementById('s2').innerHTML = s1;
+  }
+</script>
 </body>
 </html>
